@@ -1,0 +1,78 @@
+
+// Fonts
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700');
+
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.text-logo-red{
+  color: #ff1919;
+}
+
+.text-logo-blue{
+  color: #26a2da;
+}
+
+.see-through{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+}
+
+.overflow{
+  overflow: hidden;
+}
+
+.overflow-x{
+  overflow-x: hidden;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.extra-large{
+  font-size: 5rem;
+}
+
+.large{
+  font-size: 3.2rem;
+}
+
+.no-row-margin{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.wide{
+  width: 4000px;
+}
+
+.negative-margin-top{
+  margin-top: -1.5rem;
+}
+
+.photo{
+    border-radius: 50%;
+    border: 1.5px solid #212529;
+    width: 21rem;
+}
+
+.navbar-dark{
+  background: #444 !important;
+  // background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)) !important;
+}
