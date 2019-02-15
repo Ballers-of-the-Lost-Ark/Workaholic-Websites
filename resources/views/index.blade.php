@@ -29,7 +29,7 @@
 </head>
 <body class="overflow-x">
     <div class="home" id="particles-js">
-        @include('inc.navBar')
+        @include('inc.navBar.blade.php')
         @include('inc.messages')
 
         <div class="row">
