@@ -26,7 +26,7 @@
     @yield('head')
 </head>
 <body>
-    @include('inc.navBar')
+    @include('inc.navbar')
     @include('inc.messages')
     <main class="py-4 container">
         @yield('content')     
