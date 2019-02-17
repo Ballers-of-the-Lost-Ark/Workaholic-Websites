@@ -1,4 +1,8 @@
-<nav class="navbar navbar-expand-sm mb-4 {{$navbarBackground}}">
+<nav class="navbar navbar-expand-sm mb-4 @if (@isset($index))
+    see-through
+@else
+    navbar-dark
+@endif">
     <div class="container">
         {{-- 
         TODO
@@ -6,7 +10,10 @@
         <a class="navbar-brand" href="{{ url('/') }}">
             Workaholic Websites
         </a> --}}
-        <button class="navbar-toggler navbar-light bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+        <button class="navbar-toggler navbar-light @isset($index)
+            bg-light
+        @endisset"
+        type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span id="nav-icon" class="navbar-toggler-icon "></span>
         </button>
 
@@ -18,7 +25,6 @@
                 <li class="nav-item"><a class="nav-link text-white" href="/portfolio">My work</a></li>
                 <li class="nav-item"><a class="nav-link text-white" href="/contact">Contact</a></li>
                 <li class="nav-item"><a class="nav-link text-white" href="/about">About</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="/payment">Payment</a></li>
             </ul>
         </div>
     </div>

@@ -17,8 +17,10 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    {{-- footer css --}}
-    <link href="{{ asset('css/footer.css') }}" rel="stylesheet" type="text/css">
+
+    {{-- footer and loader css --}}
+    <link href="{{ asset('css/footerAndLoader.css') }}" rel="stylesheet" type="text/css">
+
     
     {{-- font awesome --}}
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -28,14 +30,27 @@
 <body>
     @include('inc.navbar')
     @include('inc.messages')
-    <main class="py-4 container">
-        @yield('content')     
-    </main>
+
+    <div class="loader w-100">
+        <div class="row no-row-margin">
+            <div class="col-8 offset-2 text-center spinner-div">
+                <div class="spinner-border text-success" style="width: 6rem; height: 6rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="la">
+        <main class="py-4 container">
+            @yield('content')     
+        </main>
     @include('inc.footer')
+    </div>
    
     @yield('script')
     <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/footerStyle.js') }}"></script>
+    <script src="{{ asset('js/footerAndLoader.js') }}"></script>
 </body>
  
 </html>

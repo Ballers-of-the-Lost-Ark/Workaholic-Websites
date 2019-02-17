@@ -1,0 +1,12 @@
+.loader{
+    height: 100vh;
+    z-index: 9999;
+}
+
+.spinner-div{
+    margin-top: 50%;
+}
+
+.la{
+    display: none;
+}

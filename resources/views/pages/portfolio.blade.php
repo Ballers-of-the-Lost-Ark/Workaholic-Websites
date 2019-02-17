@@ -9,7 +9,10 @@
         {{-- start standing in the hole--}}
         <div class="col-12 col-md-6">
             <div class="card portfolio-card mb-4" data-toggle="modal" data-target="#sith">
-                <img class="card-img-top" src="../images/multiple/standing_in_the_hole.PNG" alt="Standing in the hole small screenshot">
+                <picture>    
+                    <source media="(max-width: 600px)" srcset="../images/multiple/SITH-mobile.PNG">
+                    <img src="../images/multiple/SITH.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Standing in the hole screenshot">
+                </picture>
 
                 <div class="card-body">
                     <h5>Standing in the hole</h5>
@@ -25,7 +28,10 @@
         {{-- start here2help --}}
         <div class="col-12 col-md-6">
             <div class="card portfolio-card mb-3">
-                <img class="card-img-top" src="../images/multiple/here2help.PNG" alt="Here2help Plumbing small screenshot">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="../images/multiple/H2H-mobile.PNG">
+                    <img src="../images/multiple/H2H.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Task list screenshot">
+                </picture>
 
                 <div class="card-body">
                     <h5>Here2Help Plumbing</h5>
@@ -39,7 +45,10 @@
         {{-- start trout that life --}}
         <div class="col-12 col-md-6">
             <div class="card portfolio-card mb-3">
-                <img class="card-img-top" src="../images/multiple/brown-trout.PNG" alt="Trout That Life Anglers small screenshot">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="../images/multiple/brown-trout-mobile.PNG">
+                    <img src="../images/multiple/brown-trout.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Frat name generator screenshot">
+                </picture>
 
                 <div class="card-body">
                     <h5>Trout That Life Anglers</h5>
@@ -56,7 +65,10 @@
         {{-- start frat name generator --}}
         <div class="col-12 col-md-6">
             <div class="card portfolio-card mb-3" data-toggle="modal" data-target="#custom">
-                <img class="card-img-top" src="../images/multiple/frat-name-generator.PNG" alt="Frat name generator small screenshot">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="../images/multiple/frat-name-generator-mobile.PNG">
+                    <img src="../images/multiple/frat-name-generator.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Frat name generator screenshot">
+                </picture>
 
                 <div class="card-body">
                     <h5>Fraternity name generator</h5>

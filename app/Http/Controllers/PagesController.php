@@ -7,26 +7,22 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
     public function index(){
-        return view('index')->with(['title' => 'Workaholic Websites', 'navbarBackground' => 'see-through']);
+        return view('index')->with(['title' => 'Workaholic Websites', 'navbarBackground' => 'see-through', 'index' => 'true']);
     }
 
     public function about(){
-        return view('pages.about')->with(['title' => 'About', 'navbarBackground' => 'navbar-dark']);;
+        return view('pages.about')->with(['title' => 'About']);;
     }
 
     public function services(){
-        return view('pages.services')->with(['title' => 'Services', 'navbarBackground' => 'navbar-dark']);;
+        return view('pages.services')->with(['title' => 'Services']);;
     }
 
     public function portfolio(){
-        return view('pages.portfolio')->with(['title' => 'Portfolio', 'navbarBackground' => 'navbar-dark']);;
+        return view('pages.portfolio')->with(['title' => 'Portfolio']);;
     }
 
     public function contact(){
-        return view('pages.contact')->with(['title' => 'Contact', 'navbarBackground' => 'navbar-dark']);
-    }
-
-    public function payment(){
-        return view('pages.payment')->with(['title' => 'Payment', 'navbarBackground' => 'navbar-dark']);
+        return view('pages.contact')->with(['title' => 'Contact']);
     }
 }

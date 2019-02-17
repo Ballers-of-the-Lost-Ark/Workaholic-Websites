@@ -21,13 +21,24 @@
     {{-- home css --}}
     <link href="{{ asset('css/home.css') }}" rel="stylesheet">
 
-    {{-- footer css --}}
-    <link href="{{ asset('css/footer.css') }}" rel="stylesheet" type="text/css">
+    {{-- footer and loader css --}}
+    <link href="{{ asset('css/footerAndLoader.css') }}" rel="stylesheet" type="text/css">
     
     {{-- font awesome --}}
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body class="overflow-x">
+    <div class="loader w-100">
+        <div class="row no-row-margin">
+            <div class="col-8 offset-2 text-center spinner-div">
+                <div class="spinner-border text-success" style="width: 6rem; height: 6rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="la">
     <div class="home" id="particles-js">
         @include('inc.navbar')
         @include('inc.messages')
@@ -126,16 +137,28 @@
             <div id="slider" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3500">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="../images/multiple/standing_in_the_hole.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Standing in the hole screenshot">
+                        <picture>    
+                            <source media="(max-width: 600px)" srcset="../images/multiple/SITH-mobile.PNG">
+                            <img src="../images/multiple/SITH.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Standing in the hole screenshot">
+                        </picture>    
                     </div>
                     <div class="carousel-item">
-                        <img src="../images/multiple/here2help.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Task list screenshot">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="../images/multiple/H2H-mobile.PNG">
+                            <img src="../images/multiple/H2H.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Task list screenshot">
+                        </picture>
                     </div>
                     <div class="carousel-item">
-                        <img src="../images/multiple/brown-trout.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Frat name generator screenshot">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="../images/multiple/brown-trout-mobile.PNG">
+                            <img src="../images/multiple/brown-trout.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Frat name generator screenshot">
+                        </picture>
                     </div>
                     <div class="carousel-item">
-                        <img src="../images/multiple/frat-name-generator.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Frat name generator screenshot">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="../images/multiple/frat-name-generator-mobile.PNG">
+                            <img src="../images/multiple/frat-name-generator.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Frat name generator screenshot">
+                        </picture>
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
@@ -212,10 +235,10 @@
                 </div>
             </div>
         </div>
-    </div>    
-   
+    </div> 
     @include('inc.footer')
-
+</div>       
+   
     <script src="{{asset('js/particles.js')}}"></script>
     <script>
         particlesJS.load('particles-js', '../particles.json', function() {
@@ -224,6 +247,6 @@
     <script src="{{ asset('js/service-redirect.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/typeWriter.js') }}"></script>
-    <script src="{{ asset('js/footerStyle.js') }}"></script>
+    <script src="{{ asset('js/footerAndLoader.js') }}"></script>
 </body>
 </html>

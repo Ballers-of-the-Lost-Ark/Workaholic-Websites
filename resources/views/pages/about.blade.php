@@ -11,13 +11,13 @@
     </div>
 
     <div class="row">
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-lg-4 w-100">
             {{-- start carousel --}}
-            <div class="images">
+            <div class="images h-100">
                 <div id="carouselExampleControls" class="carousel slide pb-4" data-ride="carousel" data-interval="4500">
                     <div class="carousel-inner">
                         <div class="carousel-item active colo">
-                            <img src="../images/about/colorado-river.jpg" class="img-fluid d-block w-100 photo" alt="..." data-target="#me" data-toggle="tooltip" data-placement="left" title="One handsome web developer">
+                            <img src="../images/about/colorado-river.jpg" class="img-fluid d-block w-100 photo" alt="Nick holding a fish" data-target="#me" data-toggle="tooltip" data-placement="left" title="One handsome web developer">
                         </div>
                         <div class="carousel-item">
                             <picture>
@@ -30,7 +30,14 @@
                             </picture> 
                         </div>
                         <div class="carousel-item">
-                            <img src="../images/about/cheeseman.jpg" class=" img-fluidd-block w-100 photo" alt="..." data-target="#me" data-toggle="tooltip" data-placement="left" title="One handsome web developer">
+                            <picture>
+                                <source media="(max-width: 600px)" srcset="../images/about/cheeseman-mobile.jpg">  
+                                <source media="(max-width: 850px)" srcset="../images/about/cheeseman-medium.jpg"> 
+                                <source media="(max-width: 1300px)" srcset="../images/about/cheeseman-large.jpg">
+                                <source media="(max-width: 2500px)" srcset="../images/about/cheeseman-extra-large.jpg">  
+
+                                <img src="../images/about/cheeseman.jpg" class=" img-fluidd-block w-100 photo" alt="Nick holding another fish" data-target="#me" data-toggle="tooltip" data-placement="left" title="One handsome web developer">
+                            </picture>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -44,6 +51,7 @@
                 </div>
             </div>
         </div>
+
         <div class="col-12 col-lg-6 offset-lg-1">
             <div class="about-me pl-2 pr-2">
                 <h4><b>Nick Zinn</b> the

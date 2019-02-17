@@ -12,4 +12,17 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css');
+   .js(['resources/js/loader.js', 'resources/js/footerStyle.js'], 'public/js/footerAndLoader.js')
+   .js('resources/js/particles.js', 'public/js')
+   .js('resources/js/service-redirect.js', 'public/js')
+   .js('resources/js/sliderHeight.js', 'public/js')
+   .js('resources/js/typeWriter.js', 'public/js')
+
+   .sass('resources/sass/app.scss', 'public/css')
+   
+   .styles([
+      'resources/css/footer.css', 'resources/css/loader.css'
+   ], 'public/css/footerAndLoader.css')
+   .styles('resources/css/about.css', 'public/css/about.css')
+   .styles('resources/css/home.css', 'public/css/home.css')
+   .styles('resources/css/services.css', 'public/css/services.css');
