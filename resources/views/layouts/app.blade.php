@@ -31,13 +31,9 @@
     @include('inc.navbar')
     @include('inc.messages')
 
-    <div class="loader w-100">
-        <div class="row no-row-margin">
-            <div class="col-8 offset-2 text-center spinner-div">
-                <div class="spinner-border text-success" style="width: 6rem; height: 6rem;" role="status">
-                    <span class="sr-only">Loading...</span>
-                </div>
-            </div>
+    <div class="loader">
+        <div class="spinner-border spinner text-success" style="width: 6rem; height: 6rem;" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
     </div>
 
@@ -45,7 +41,8 @@
         <main class="py-4 container">
             @yield('content')     
         </main>
-    @include('inc.footer')
+        
+        @include('inc.footer')
     </div>
    
     @yield('script')

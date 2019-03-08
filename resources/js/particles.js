@@ -55,7 +55,7 @@ var pJS = function(tag_id, params){
         }
       },
       size: {
-        value: 20,
+        value: 100,
         random: false,
         anim: {
           enable: false,
@@ -125,7 +125,7 @@ var pJS = function(tag_id, params){
       },
       mouse:{}
     },
-    retina_detect: false,
+    retina_detect: true,
     fn: {
       interact: {},
       modes: {},

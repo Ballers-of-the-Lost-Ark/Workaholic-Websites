@@ -22,7 +22,7 @@
             <h2 class="text-center">Services Include</h2>
         </div>
         {{-- Start custom code --}}
-        <div class="col-12 col-md-6 col-xl-3">
+        <div class="col-12 col-md-6 col-xl-4">
             <div class="card mb-4" data-toggle="modal" data-target="#custom-code">
                 <div class="ml-auto mr-auto mt-3">
                     <i class="fas fa-code card-img-top extra-large"></i>
@@ -37,7 +37,7 @@
         </div>
 
         {{-- Start back end development --}}
-        <div class="col-12 col-md-6 col-xl-3">
+        <div class="col-12 col-md-6 col-xl-4">
             <div class="card mb-4" data-toggle="modal" data-target="#backend">
                 <div class="ml-auto mr-auto mt-3">
                     <i class="fas fa-server card-img-top extra-large"></i>
@@ -52,7 +52,7 @@
         </div>
 
         {{-- Start front end development --}}
-        <div class="col-12 col-md-6 col-xl-3">
+        <div class="col-12 col-md-6 col-xl-4">
             <div class="card mb-4" data-toggle="modal" data-target="#frontend">
                 <div class="ml-auto mr-auto mt-3">
                     <i class="fas fa-paint-brush card-img-top extra-large"></i>
@@ -67,7 +67,7 @@
         </div>
 
         {{-- start drag and drop --}}
-        <div class="col-12 col-md-6 col-xl-3">
+        <div class="col-12 col-md-6 col-xl-4">
             <div class="card mb-4" data-toggle="modal" data-target="#drag-drop">
                 <div class="ml-auto mr-auto mt-3">
                     <i class="fab fa-wordpress card-img-top extra-large"></i>
@@ -80,6 +80,48 @@
                 </div>
             </div>
         </div>
+
+        {{-- start content creation --}}
+        <div class="col-12 col-md-6 col-xl-4">
+            <div class="card mb-4" data-toggle="modal" data-target="#drag-drop">
+                <div class="ml-auto mr-auto mt-3">
+                    <i class="fas fa-pencil-alt card-img-top extra-large"></i>
+                </div>
+
+                <div class="card-body">
+                    <h5>Content creation</h5>
+                    <p>Writing and organizing content. This includes photos, paragraphs, logos, themes, colors, and anything else that goes into a website.</p>
+                    <p><b>Prices vary</b></p>
+                </div>
+            </div>
+        </div>
+
+        {{-- start consulting --}}
+        <div class="col-12 col-md-6 col-xl-4">
+            <div class="card mb-4" data-toggle="modal" data-target="#drag-drop">
+                <div class="ml-auto mr-auto mt-3">
+                    <i class="far fa-smile card-img-top extra-large"></i>
+                </div>
+
+                <div class="card-body">
+                    <h5>Guidance/Advice</h5>
+                    <p>There's a lot of choices to make when creating a website. To name a few:</p>
+                        <ul>
+                            <li>Who's going to host it ?</li>
+                            <li>What type of hosting do you need (shared, VPS, dedicated servers) ?</li>
+                            <li>How is it going to be built (drag and drop, developer {like yours truly}, template) ?</li>
+                            <li>If you need to send emails what email server is needed (SparkPost, Amazon SES, Mailgun, MailGet Bolt) ?</li>
+                            <li>What's it going to look like (theme, color scheme, fonts, images) ?</li>
+                            <li>If you need a database where do the encrypted backups go (Dropbox, Google Drive, Box, OneDrive, MediaFire, external server) ?</li>
+                            <li>How to transfer a domain ?</li>
+                            <li>What's a fair price for a domain ?</li>
+                        </ul>
+                    <p>Fortunately I know the ins and outs of creating a website and will guide you to a wise descion everytime.</p>    
+                    <p><b>Free with every website</b></p>
+                </div>
+            </div>
+        </div>
+
     </div>
     
    {{-- start progress --}}
@@ -107,7 +149,7 @@
             </div>
         </div>
         <div class="col-12 col-lg-6">
-            <h6>PHP</h6>
+            <h6>PHP (Laravel)</h6>
             <div class="mb-2 progress">
                 <div class="progress-bar php progress-bar-animated progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">90%</div>
             </div>
@@ -120,8 +162,20 @@
         </div>
         <div class="col-12 col-lg-6">
             <h6>Materialize</h6>
-            <div class="mb-5 progress">
+            <div class="mb-2 progress">
                 <div class="progress-bar materialize progress-bar-animated progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6">
+            <h6>Linux Command Line</h6>
+            <div class="mb-2 progress">
+                <div class="progress-bar bg-dark progress-bar-animated progress-bar-striped" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">65%</div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6">
+            <h6>Node.js</h6>
+            <div class="mb-5 progress">
+                <div class="progress-bar node progress-bar-animated progress-bar-striped" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">45%</div>
             </div>
         </div>
     </div>
@@ -141,9 +195,4 @@
             <p>If your website is in disrepair, needs to be updated, and or was built in 2009 and hasn't been touched since <a href="/contact" class="underline">contact me.</a> <b>Prices vary greatly.</b></p>  
         </div>
     </div>
-
-    {{-- <div class="text-center mb-1">
-        <h4>Disclaimer</h4>
-        <p>I dot not design.</p>
-    </div> --}}
 @endsection

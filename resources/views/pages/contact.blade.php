@@ -38,7 +38,7 @@
             <div class="col-12">
                 <div class="form-group">
                     {{Form::label('text', 'Message')}}
-                    {{Form::textarea('text', '', ['placeholder' => 'A brief message', 'class' => 'form-control'])}}
+                    {{Form::textarea('text', '', ['placeholder' => 'A brief message (optional)', 'class' => 'form-control'])}}
                 </div>
             </div>
 

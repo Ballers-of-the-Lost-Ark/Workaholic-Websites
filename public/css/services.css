@@ -1,1 +1,49 @@
-.html-orange{background-color:#e34c26!important}.css-blue{background-color:#33a9dc!important}.javascript-gold{background-color:#efd81d!important}.php{background-color:#869ad9!important}.bootstrap{background-color:#6c419d!important}.materialize{background-color:#ec7078!important}footer{bottom:auto!important}.progress{background:#bebfbf;border-radius:20px;margin:0;width:0;animation:animate-positive 1s forwards}.progress .progress-value{font-size:20px;font-weight:700;color:#6b7880;position:absolute;top:3px;right:10px}@keyframes animate-positive{0%{width:0}100%{width:100%}}
+.html-orange{
+    background-color: #e34c26 !important;
+}
+
+.css-blue{
+    background-color: #33a9dc !important;
+}
+
+.javascript-gold{
+    background-color: #efd81d !important;
+}
+
+.php{
+    background-color: #869ad9 !important;
+}
+
+.bootstrap{
+    background-color: #6c419d !important;
+}
+
+.materialize{
+    background-color: #ec7078 !important;
+}
+
+footer{
+    bottom: auto !important;
+}
+
+.progress{
+    background: #bebfbf;
+    border-radius: 20px;
+    margin: 0;
+    width: 0;
+    animation: animate-positive 1s forwards;
+}
+
+.progress .progress-value{
+    font-size: 20px;
+    font-weight: 700;
+    color: #6b7880;
+    position: absolute;
+    top: 3px;
+    right: 10px;
+}
+
+@keyframes animate-positive{
+    0%{ width: 0; }
+    100%{ width: 100%; }
+}

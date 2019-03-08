@@ -1,1 +1,177 @@
-!function(t){var e={};function n(i){if(e[i])return e[i].exports;var r=e[i]={i:i,l:!1,exports:{}};return t[i].call(r.exports,r,r.exports,n),r.l=!0,r.exports}n.m=t,n.c=e,n.d=function(t,e,i){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:i})},n.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var i=Object.create(null);if(n.r(i),Object.defineProperty(i,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var r in t)n.d(i,r,function(e){return t[e]}.bind(null,r));return i},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p="/",n(n.s=45)}({45:function(t,e,n){t.exports=n(46)},46:function(t,e){var n,i,r,o=function(t,e){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:2e3;this.txtElement=t,this.words=e,this.txt="",this.wordIndex=0,this.wait=parseInt(n,10),this.type(),this.isDeleting=!1};o.prototype.type=function(){var t=this,e=this.wordIndex%this.words.length,n=this.words[e];this.isDeleting?this.txt=n.substring(0,this.txt.length-1):this.txt=n.substring(0,this.txt.length+1);var i='<span class="txt">'.concat(this.txt,"</span>");this.txtElement.innerHTML=i;var r=300;this.isDeleting&&(r/=2),this.isDeleting||this.txt!==n?this.isDeleting&&""===this.txt&&(this.isDeleting=!1,this.wordIndex++,r=500):(r=this.wait,this.isDeleting=!0),setTimeout(function(){return t.type()},r)},document.addEventListener("DOMContentLoaded",(n=document.querySelector(".txt-type"),i=JSON.parse(n.getAttribute("data-words")),r=n.getAttribute("data-wait"),void new o(n,i,r)))}});
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "/";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./resources/js/typeWriter.js":
+/*!************************************!*\
+  !*** ./resources/js/typeWriter.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var TypeWriter = function TypeWriter(txtElement, words) {
+  var wait = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 2000;
+  this.txtElement = txtElement;
+  this.words = words;
+  this.txt = '';
+  this.wordIndex = 0;
+  this.wait = parseInt(wait, 10);
+  this.type();
+  this.isDeleting = false;
+}; // Type Method
+
+
+TypeWriter.prototype.type = function () {
+  var _this = this;
+
+  // Current index of word
+  var current = this.wordIndex % this.words.length; // Get full text of current word
+
+  var fullTxt = this.words[current]; // Check if deleting
+
+  if (this.isDeleting) {
+    // Remove char
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    // Add char
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  var letter = '<span class="txt">'.concat(this.txt, '</span>'); // Insert txt into element
+
+  this.txtElement.innerHTML = letter; // Initial Type Speed
+
+  var typeSpeed = 300;
+
+  if (this.isDeleting) {
+    typeSpeed /= 2;
+  } // If word is complete
+
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    // Make pause at end
+    typeSpeed = this.wait; // Set delete to true
+
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false; // Move to next word
+
+    this.wordIndex++; // Pause before start typing
+
+    typeSpeed = 500;
+  }
+
+  setTimeout(function () {
+    return _this.type();
+  }, typeSpeed);
+}; // init
+
+
+document.addEventListener('DOMContentLoaded', init());
+
+function init() {
+  var textElement = document.querySelector('.txt-type');
+  var words = JSON.parse(textElement.getAttribute('data-words'));
+  var wait = textElement.getAttribute('data-wait');
+  new TypeWriter(textElement, words, wait);
+}
+
+/***/ }),
+
+/***/ 5:
+/*!******************************************!*\
+  !*** multi ./resources/js/typeWriter.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\workaholic\resources\js\typeWriter.js */"./resources/js/typeWriter.js");
+
+
+/***/ })
+
+/******/ });

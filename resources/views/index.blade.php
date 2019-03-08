@@ -28,28 +28,24 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body class="overflow-x">
-    <div class="loader w-100">
-        <div class="row no-row-margin">
-            <div class="col-8 offset-2 text-center spinner-div">
-                <div class="spinner-border text-success" style="width: 6rem; height: 6rem;" role="status">
-                    <span class="sr-only">Loading...</span>
-                </div>
-            </div>
-        </div>
+<div class="loader">
+    <div class="spinner-border spinner text-success" style="width: 6rem; height: 6rem;" role="status">
+        <span class="sr-only">Loading...</span>
     </div>
+</div>
 
 <div class="la">
-    <div class="home" id="particles-js">
+    <div class="home">
         @include('inc.navbar')
         @include('inc.messages')
 
-        <div class="row">
+        <div class="row" id="particles-js">
             <div class="text-white mt-4 col-10 offset-1">
                 <h1>Workaholic Websites</h1>
                 <h2><i>Where quality is everything</i></h2>
             </div>
         </div>
-    </div>
+    </div>    
 
     <div class="triangle-down mb-4"></div>
 
@@ -238,15 +234,17 @@
     </div> 
     @include('inc.footer')
 </div>       
-   
-    <script src="{{asset('js/particles.js')}}"></script>
-    <script>
-        particlesJS.load('particles-js', '../particles.json', function() {
-        });
-    </script>
-    <script src="{{ asset('js/service-redirect.js') }}"></script>
+
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/service-redirect.js') }}"></script>
     <script src="{{ asset('js/typeWriter.js') }}"></script>
     <script src="{{ asset('js/footerAndLoader.js') }}"></script>
+    <script src="{{asset('js/particles.js')}}"></script>
+    <script>
+        window.addEventListener('load', function(){
+                particlesJS.load('particles-js', '../particles.json', function() {
+            });
+        });
+    </script>
 </body>
 </html>

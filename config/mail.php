@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 465),
+    'port' => env('MAIL_PORT', 587),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'admin@workaholic.websites.com'),
+        'address' => env('MAIL_FROM_ADDRESS', 'admin@mail.standing-in-the-hole.com'),
         'name' => env('MAIL_FROM_NAME', 'Customer'),
     ],
 

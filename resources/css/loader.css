@@ -1,10 +1,12 @@
 .loader{
     height: 100vh;
     z-index: 9999;
+    justify-content: center;
+    display: flex;
 }
 
-.spinner-div{
-    margin-top: 50%;
+.spinner{
+    align-self: center;
 }
 
 .la{
