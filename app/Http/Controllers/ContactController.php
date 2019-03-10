@@ -28,6 +28,8 @@ class ContactController extends Controller
         } else {
             $text = 'No message';
         }
+
+        dd($date);
         
         
         Mail::to('workaholic.websites@gmail.com')->send(new SendMailable($name, $email, $text, $date));
