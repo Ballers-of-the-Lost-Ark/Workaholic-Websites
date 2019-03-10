@@ -15,7 +15,7 @@ class ContactController extends Controller
         $request->validate([
             'name' => 'required|max:255',
             'email' => 'required|email|max:200',
-            'text' => 'nullable|max:3000',
+            'text' => 'nullable|max:3000'
         ]);
 
         $name = Purifier::clean($request->name);
