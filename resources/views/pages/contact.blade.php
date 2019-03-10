@@ -42,7 +42,7 @@
                 </div>
             </div>
 
-            {{Form::hidden('date', \Carbon\Carbon::now())}}
+            {{Form::hidden('date', {{\Carbon\Carbon::now())}} }}
             
             <div class="col-auto">
                 {{ Form::submit('Let\'s work together', ['class' => 'btn btn-primary shadow'])}}
