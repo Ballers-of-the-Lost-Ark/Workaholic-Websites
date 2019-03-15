@@ -1,8 +1,6 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
-    "/js/footerAndLoader.js": "/js/footerAndLoader.js",
-    "/js/other.js": "/js/other.js",
     "/css/footerAndLoader.css": "/css/footerAndLoader.css",
     "/css/other.css": "/css/other.css"
 }

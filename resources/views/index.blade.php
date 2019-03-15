@@ -33,12 +33,6 @@
 
     <title>Workaholic Websites | Superb Web Development</title>
 
-    <!-- Fonts -->
-    {{-- robot condensed bold --}}
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
-    {{-- roboto condensed --}}
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
@@ -61,7 +55,7 @@
     gtag('config', 'UA-136072054-1');
     </script>
 
-    <link rel="shortcut icon" href="{{{ asset('images/logo.png') }}}">
+    <link rel="shortcut icon" href="{{{ asset('images/logo.ico') }}}">
 
 </head>
 <body class="overflow-x">
@@ -274,9 +268,7 @@
     </div> 
     @include('inc.footer')
 </div>       
-    <script src="{{ asset('js/footerAndLoader.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/other.js') }}"></script>
     <script>
         window.addEventListener('load', function(){
                 particlesJS.load('particles-js', '../particles.json', function() {

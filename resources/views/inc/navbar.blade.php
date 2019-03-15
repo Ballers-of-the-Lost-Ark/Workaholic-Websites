@@ -4,9 +4,6 @@
     navbar-dark
 @endif">
     <div class="container">
-        {{-- <a class="navbar-brand" href="{{ url('/') }}">
-            <img src="../images/logo.png" alt="Workaholic Websites logo">
-        </a> --}}
         <button class="navbar-toggler navbar-light @isset($index)
             bg-light
         @endisset"
@@ -24,5 +21,9 @@
                 <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
             </ul>
         </div>
+
+        <a class="navbar-brand" href="{{ url('/') }}">
+            <img class="logo" src="../images/logo.png" alt="Workaholic Websites logo">
+        </a>
     </div>
 </nav>

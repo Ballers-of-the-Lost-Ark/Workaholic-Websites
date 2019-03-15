@@ -33,7 +33,7 @@
     <div class="row">
         <div class="col-12 col-lg-4 w-100">
             {{-- start carousel --}}
-            <div class="images h-100">
+            <div class="images h-auto">
                 <div id="carouselExampleControls" class="carousel carousel-about slide pb-4" data-ride="carousel" data-interval="4500">
                     <div class="carousel-inner">
                         <div class="carousel-item active colo">

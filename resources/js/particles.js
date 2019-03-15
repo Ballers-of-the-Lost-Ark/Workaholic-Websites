@@ -7,7 +7,7 @@
 /* v2.0.0
 /* ----------------------------------------------- */
 
-if (document.querySelector('.home') != null) {
+if (window.location.pathname == '/') {
   
 
 var pJS = function(tag_id, params){

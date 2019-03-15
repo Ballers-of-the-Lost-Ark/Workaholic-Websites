@@ -1,3 +1,6 @@
+if (window.location.pathname == '/about' | window.location.pathname == '/') {
+  
+
 const TypeWriter = function(txtElement, words, wait = 2000) {
   this.txtElement = txtElement;
   this.words = words;
@@ -61,4 +64,5 @@ function init(){
     const wait = textElement.getAttribute('data-wait');
 
     new TypeWriter(textElement, words, wait);
+}
 }

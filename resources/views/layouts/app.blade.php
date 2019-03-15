@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -8,12 +6,6 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{$title}}</title>
-
-    <!-- Fonts -->
-    {{-- robot condensed bold --}}
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
-    {{-- roboto condensed --}}
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -38,7 +30,7 @@
     gtag('config', 'UA-136072054-1');
     </script>
 
-    <link rel="shortcut icon" href="{{{ asset('images/logo.png') }}}">
+    <link rel="shortcut icon" href="{{{ asset('images/logo.ico') }}}">
 
     <meta name="robots" content="follow">
 
@@ -63,9 +55,7 @@
     </div>
    
     @yield('script')
-    <script src="{{ asset('js/footerAndLoader.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/other.js') }}"></script>
 </body>
  
 </html>

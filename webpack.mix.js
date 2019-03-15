@@ -11,10 +11,7 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-   .js(['resources/js/loader.js', 'resources/js/footerStyle.js'], 'public/js/footerAndLoader.js')
-   
-   .js(['resources/js/particles.js', 'resources/js/service-redirect.js', 'resources/js/sliderHeight.js', 'resources/js/typeWriter.js'], 'public/js/other.js');
+mix.js(['resources/js/app.js','resources/js/loader.js', 'resources/js/footerStyle.js', 'resources/js/particles.js', 'resources/js/service-redirect.js', 'resources/js/sliderHeight.js', 'resources/js/typeWriter.js'], 'public/js/app.js');
 
    mix.sass('resources/sass/app.scss', 'public/css');
    
