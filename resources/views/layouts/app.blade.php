@@ -18,6 +18,9 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
+    {{-- other css --}}
+    <link href="{{ asset('css/other.css') }}" rel="stylesheet">
+
     {{-- footer and loader css --}}
     <link href="{{ asset('css/footerAndLoader.css') }}" rel="stylesheet" type="text/css">
 
@@ -25,7 +28,19 @@
     {{-- font awesome --}}
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-    <link rel="shortcut icon" href="{{{ asset('images/favicon.png') }}}">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136072054-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-136072054-1');
+    </script>
+
+    <link rel="shortcut icon" href="{{{ asset('images/logo.png') }}}">
+
+    <meta name="robots" content="follow">
 
     @yield('head')
 </head>
@@ -48,8 +63,9 @@
     </div>
    
     @yield('script')
-    <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/footerAndLoader.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/other.js') }}"></script>
 </body>
  
 </html>

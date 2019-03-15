@@ -19,10 +19,14 @@ class PagesController extends Controller
     }
 
     public function portfolio(){
-        return view('pages.portfolio')->with(['title' => 'Portfolio']);;
+        return view('pages.portfolio')->with(['title' => 'My Work']);;
     }
 
     public function contact(){
         return view('pages.contact')->with(['title' => 'Contact']);
+    }
+
+    public function terms(){
+        return view('pages.terms')->with(['title' => 'Terms and Privacy Policy']);
     }
 }

@@ -1,3 +1,59 @@
+.text{
+    margin-top: -2rem;
+}
+
+.text-large{
+    font-size: 3.2rem;
+}
+
+.fade-out1{
+    color: #3b424a;
+}
+
+.fade-out2{
+    color: #55606a;
+}
+
+.fade-out3{
+    color: #707d8b;
+}
+
+.photo{
+    border-radius: 50%;
+    border: 1.5px solid #212529;
+}
+
+.carousel-about{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+@media(min-width: 576px){
+    .carousel-about{
+        width: 70%;
+    }
+}
+
+@media(min-width: 768px){
+    .carousel-about{
+        width: 55%;
+    }
+}
+
+@media(min-width: 992px){
+    .carousel-about{
+        width: 23rem;
+    }
+}
+
+.carousel-about-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff1919' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-about-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2326a2da' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
 .home{
     background-position: center;
     background-size: cover;
@@ -88,4 +144,57 @@
     .home{
         background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/index/code-mobile.jpeg);
     }
+}
+.html-orange{
+    background-color: #e34c26 !important;
+}
+
+.css-blue{
+    background-color: #33a9dc !important;
+}
+
+.javascript-gold{
+    background-color: #efd81d !important;
+}
+
+.php{
+    background-color: #869ad9 !important;
+}
+
+.bootstrap{
+    background-color: #6c419d !important;
+}
+
+.materialize{
+    background-color: #ec7078 !important;
+}
+
+.node{
+    background-color: #74ab62 !important;
+}
+
+footer{
+    bottom: auto !important;
+}
+
+.progress{
+    background: #bebfbf;
+    border-radius: 20px;
+    margin: 0;
+    width: 0;
+    animation: animate-positive 1s forwards;
+}
+
+.progress .progress-value{
+    font-size: 20px;
+    font-weight: 700;
+    color: #6b7880;
+    position: absolute;
+    top: 3px;
+    right: 10px;
+}
+
+@keyframes animate-positive{
+    0%{ width: 0; }
+    100%{ width: 100%; }
 }

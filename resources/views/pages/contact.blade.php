@@ -6,6 +6,29 @@
             font-size: 1.15rem;
         }
     </style>
+
+    <meta name="description" content="From professional websites to timely responses and 24/7 availability. Come see why Quality is Everything and contact a pro full stack web developer.">
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Contact">
+    <meta itemprop="description" content="From professional websites to timely responses and 24/7 availability. Come see why Quality is Everything and contact a pro full stack web developer.">
+    <meta content="professional, quality, contact, email, phone number" name="keywords">
+    <meta itemprop="image" content="">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://workaholic-websites.com/contact">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact">
+    <meta property="og:description" content="From professional websites to timely responses and 24/7 availability. Come see why Quality is Everything and contact a pro full stack web developer.">
+    <meta property="og:image" content="">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact">
+    <meta name="twitter:description" content="From professional websites to timely responses and 24/7 availability. Come see why Quality is Everything and contact a pro full stack web developer.">
+    <meta name="twitter:image" content="">
+
+    <!-- Meta Tags Generated via http://heymeta.com -->
 @endsection
 
 @section('content')

@@ -7,6 +7,9 @@
 /* v2.0.0
 /* ----------------------------------------------- */
 
+if (document.querySelector('.home') != null) {
+  
+
 var pJS = function(tag_id, params){
 
   var canvas_el = document.querySelector('#'+tag_id+' > .particles-js-canvas-el');
@@ -41,7 +44,7 @@ var pJS = function(tag_id, params){
         image: {
           src: '',
           width: 100,
-          height: 100
+          height: 50
         }
       },
       opacity: {
@@ -1539,3 +1542,4 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
   xhr.send();
 
 };
+}

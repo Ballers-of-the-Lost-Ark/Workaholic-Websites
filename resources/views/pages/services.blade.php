@@ -1,7 +1,28 @@
 @extends('layouts.app')
 
 @section('head')
-    <link href="{{ asset('css/services.css') }}" rel="stylesheet">
+    <meta name="description" content="Our high quality services include custom websites, back end development, front end development, full stack development, drag and drop, content creation, maintenance and website consulting.">
+    <meta content="full stack, front end, back end, HTML, CSS, JavaScript, PHP, Laravel Bootstrap, Materialize, DevOps, Node.js" name="keywords">
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Services">
+    <meta itemprop="description" content="Our high quality services include custom websites, back end development, front end development, full stack development, drag and drop, content creation, maintenance and website consulting. ">
+    <meta itemprop="image" content="">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://workaholic-websites.com/services">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Services">
+    <meta property="og:description" content="Our high quality services include custom websites, back end development, front end development, full stack development, drag and drop, content creation, maintenance and website consulting. ">
+    <meta property="og:image" content="">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Services">
+    <meta name="twitter:description" content="Our high quality services include custom websites, back end development, front end development, full stack development, drag and drop, content creation, maintenance and website consulting. ">
+    <meta name="twitter:image" content="">
+
+    <!-- Meta Tags Generated via http://heymeta.com -->
 @endsection
 
 @section('content')
@@ -25,7 +46,7 @@
         <div class="col-12 col-md-6 col-xl-4">
             <div class="card mb-4" data-toggle="modal" data-target="#custom-code">
                 <div class="ml-auto mr-auto mt-3">
-                    <i class="fas fa-code card-img-top extra-large"></i>
+                    <i class="fas fa-code card-img-top extra-large text-success"></i>
                 </div>
 
                 <div class="card-body">
@@ -40,12 +61,12 @@
         <div class="col-12 col-md-6 col-xl-4">
             <div class="card mb-4" data-toggle="modal" data-target="#backend">
                 <div class="ml-auto mr-auto mt-3">
-                    <i class="fas fa-server card-img-top extra-large"></i>
+                    <i class="fas fa-server card-img-top extra-large text-primary"></i>
                 </div>
 
                 <div class="card-body">
                     <h5>Server side development</h5>
-                    <p>Adding/updating parts to your website that aren't seen directly. For example plugins, widgets, mail functionality, google maps, forms, a social media feed, an online shop, admin privledges,    managing databases and general maintenance.</p>
+                    <p>Adding/updating parts to your website that aren't seen directly. For example plugins, widgets, mail functionality, google maps, forms, a social media feed, an online shop, admin privileges,    managing databases and general maintenance.</p>
                     <p><b>Prices vary</b></p>
                 </div>
             </div>
@@ -55,7 +76,7 @@
         <div class="col-12 col-md-6 col-xl-4">
             <div class="card mb-4" data-toggle="modal" data-target="#frontend">
                 <div class="ml-auto mr-auto mt-3">
-                    <i class="fas fa-paint-brush card-img-top extra-large"></i>
+                    <i class="fas fa-paint-brush card-img-top extra-large text-logo-red"></i>
                 </div>
 
                 <div class="card-body">
@@ -70,13 +91,13 @@
         <div class="col-12 col-md-6 col-xl-4">
             <div class="card mb-4" data-toggle="modal" data-target="#drag-drop">
                 <div class="ml-auto mr-auto mt-3">
-                    <i class="fab fa-wordpress card-img-top extra-large"></i>
+                    <i class="fab fa-wordpress card-img-top extra-large text-wordpress-color"></i>
                 </div>
 
                 <div class="card-body">
                     <h5>Drag and drop</h5>
                     <p>For those on a tight budget, creating/updating a Wordpress, Wix, Go Daddy, Squarespace, etc. Includes adding plugins, google analytics, social media, rearranging items, animation, images, and general maintenance.</p>
-                    <p><b>Starting as low as $250</b></p>
+                    <p><b>Starting as low as $300</b></p>
                 </div>
             </div>
         </div>
@@ -100,7 +121,7 @@
         <div class="col-12 col-md-6 col-xl-4">
             <div class="card mb-4" data-toggle="modal" data-target="#drag-drop">
                 <div class="ml-auto mr-auto mt-3">
-                    <i class="far fa-smile card-img-top extra-large"></i>
+                    <i class="far fa-smile card-img-top extra-large text-warning"></i>
                 </div>
 
                 <div class="card-body">
@@ -116,7 +137,7 @@
                             <li>How to transfer a domain ?</li>
                             <li>What's a fair price for a domain ?</li>
                         </ul>
-                    <p>Fortunately I know the ins and outs of creating a website and will guide you to a wise descion everytime.</p>    
+                    <p>Fortunately I know the ins and outs of creating a website and will guide you to a wise decision every time.</p>    
                     <p><b>Free with every website</b></p>
                 </div>
             </div>
@@ -167,9 +188,9 @@
             </div>
         </div>
         <div class="col-12 col-lg-6">
-            <h6>Linux Command Line</h6>
+            <h6>DevOps/Linux Command Line</h6>
             <div class="mb-2 progress">
-                <div class="progress-bar bg-dark progress-bar-animated progress-bar-striped" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">65%</div>
+                <div class="progress-bar bg-dark progress-bar-animated progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
             </div>
         </div>
         <div class="col-12 col-lg-6">

@@ -2,12 +2,7 @@
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
     "/js/footerAndLoader.js": "/js/footerAndLoader.js",
-    "/js/particles.js": "/js/particles.js",
-    "/js/service-redirect.js": "/js/service-redirect.js",
-    "/js/sliderHeight.js": "/js/sliderHeight.js",
-    "/js/typeWriter.js": "/js/typeWriter.js",
+    "/js/other.js": "/js/other.js",
     "/css/footerAndLoader.css": "/css/footerAndLoader.css",
-    "/css/about.css": "/css/about.css",
-    "/css/home.css": "/css/home.css",
-    "/css/services.css": "/css/services.css"
+    "/css/other.css": "/css/other.css"
 }

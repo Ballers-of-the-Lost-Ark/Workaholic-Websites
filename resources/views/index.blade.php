@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
+    <meta name="description" content="Full stack web development. A one stop shop for all your website needs. Grow your business with an elegant website. Come see why Quality is Everything at Workaholic Websites®.">
+    <meta content="website builder, web developer, full stack, front end, back end" name="keywords">
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Workaholic Websites | Superb Web Development">
+    <meta itemprop="description" content="Full stack web development. A one stop shop for all your website needs. Grow your business with an elegant website. Come see why Quality is Everything at Workaholic Websites®.">
+    <meta itemprop="image" content="https://workaholic-websites.com/images/index/code-large.jpeg">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://workaholic-websites.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Workaholic Websites | Superb Web Development">
+    <meta property="og:description" content="Full stack web development. A one stop shop for all your website needs. Grow your business with an elegant website. Come see why Quality is Everything at Workaholic Websites®.">
+    <meta property="og:image" content="https://workaholic-websites.com/images/index/code-large.jpeg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Workaholic Websites | Superb Web Development">
+    <meta name="twitter:description" content="Full stack web development. A one stop shop for all your website needs. Grow your business with an elegant website. Come see why Quality is Everything at Workaholic Websites®.">
+    <meta name="twitter:image" content="https://workaholic-websites.com/images/index/code-large.jpeg">
+
+    <!-- Meta Tags Generated via http://heymeta.com -->
+    
+    <meta name="robots" content="index, follow">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Workaholic Websites</title>
+    <title>Workaholic Websites | Superb Web Development</title>
 
     <!-- Fonts -->
     {{-- robot condensed bold --}}
@@ -18,14 +42,27 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-    {{-- home css --}}
-    <link href="{{ asset('css/home.css') }}" rel="stylesheet">
+    {{-- other css --}}
+    <link href="{{ asset('css/other.css') }}" rel="stylesheet">
 
     {{-- footer and loader css --}}
     <link href="{{ asset('css/footerAndLoader.css') }}" rel="stylesheet" type="text/css">
     
     {{-- font awesome --}}
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136072054-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-136072054-1');
+    </script>
+
+    <link rel="shortcut icon" href="{{{ asset('images/logo.png') }}}">
+
 </head>
 <body class="overflow-x">
 <div class="loader">
@@ -39,12 +76,15 @@
         @include('inc.navbar')
         @include('inc.messages')
 
-        <div class="row" id="particles-js">
-            <div class="text-white mt-4 col-10 offset-1">
-                <h1>Workaholic Websites</h1>
-                <h2><i>Where quality is everything</i></h2>
+        <div class="particles" id="particles-js" >
+
+            <div class="row">
+                <div class="text-white mt-4 col-10 offset-1">
+                    <h1>Workaholic Websites</h1>
+                    <h2><i>Where quality is everything</i></h2>
+                </div>
             </div>
-        </div>
+        </div>    
     </div>    
 
     <div class="triangle-down mb-4"></div>
@@ -61,7 +101,7 @@
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="card cursor card-service mb-4" data-toggle="modal" data-target="#custom-code">
                     <div class="ml-auto mr-auto mt-3">
-                        <i class="fas fa-code card-img-top extra-large"></i>
+                        <i class="fas fa-code card-img-top extra-large text-success"></i>
                     </div>
 
                     <div class="card-body">
@@ -76,7 +116,7 @@
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="card cursor card-service mb-4" data-toggle="modal" data-target="#backend">
                     <div class="ml-auto mr-auto mt-3">
-                        <i class="fas fa-server card-img-top extra-large"></i>
+                        <i class="fas fa-server card-img-top extra-large text-primary"></i>
                     </div>
 
                     <div class="card-body">
@@ -91,7 +131,7 @@
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="card cursor card-service mb-4" data-toggle="modal" data-target="#frontend">
                     <div class="ml-auto mr-auto mt-3">
-                        <i class="fas fa-paint-brush card-img-top extra-large"></i>
+                        <i class="fas fa-paint-brush card-img-top extra-large text-logo-red"></i>
                     </div>
 
                     <div class="card-body">
@@ -106,7 +146,7 @@
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="card cursor card-service mb-4" data-toggle="modal" data-target="#drag-drop">
                     <div class="ml-auto mr-auto mt-3">
-                        <i class="fab fa-wordpress card-img-top extra-large"></i>
+                        <i class="fab fa-wordpress card-img-top extra-large text-wordpress-color"></i>
                     </div>
 
                     <div class="card-body">
@@ -130,29 +170,29 @@
 
         {{-- start carousel --}}
         <div class="carousel mb-4">
-            <div id="slider" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3500">
+            <div id="slider" class="carousel carousel-index slide carousel-fade" data-ride="carousel" data-interval="3500">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <picture>    
-                            <source media="(max-width: 600px)" srcset="../images/multiple/SITH-mobile.PNG">
+                            <source media="(max-width: 600px)" srcset="../images/multiple/SITH-mobile.png">
                             <img src="../images/multiple/SITH.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Standing in the hole screenshot">
                         </picture>    
                     </div>
                     <div class="carousel-item">
                         <picture>
-                            <source media="(max-width: 600px)" srcset="../images/multiple/H2H-mobile.PNG">
+                            <source media="(max-width: 600px)" srcset="../images/multiple/H2H-mobile.png">
                             <img src="../images/multiple/H2H.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Task list screenshot">
                         </picture>
                     </div>
                     <div class="carousel-item">
                         <picture>
-                            <source media="(max-width: 600px)" srcset="../images/multiple/brown-trout-mobile.PNG">
+                            <source media="(max-width: 600px)" srcset="../images/multiple/brown-trout-mobile.png">
                             <img src="../images/multiple/brown-trout.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Frat name generator screenshot">
                         </picture>
                     </div>
                     <div class="carousel-item">
                         <picture>
-                            <source media="(max-width: 600px)" srcset="../images/multiple/frat-name-generator-mobile.PNG">
+                            <source media="(max-width: 600px)" srcset="../images/multiple/frat-name-generator-mobile.png">
                             <img src="../images/multiple/frat-name-generator.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Frat name generator screenshot">
                         </picture>
                     </div>
@@ -196,7 +236,7 @@
         </h4> 
         <p>Hello folks, my name is Nick Zinn. I live in the great state of Colorado. Besides programming, learning about quantum mechanics, and discussing economics. I'm a regular guy, I love to fly fish, golf, workout ... <a href="/about" class="btn btn-outline-info ml-1 mr-2">Read more</a>(Hablo español un poco, pero soy un gringo. Por ejemplo, puedo tener otro cerveza por favor.)</p>
 
-        <div class="modal fade" id="me" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal fade modal-padding" id="me" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="col-7 offset-4">
@@ -234,12 +274,9 @@
     </div> 
     @include('inc.footer')
 </div>       
-
-    <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/service-redirect.js') }}"></script>
-    <script src="{{ asset('js/typeWriter.js') }}"></script>
     <script src="{{ asset('js/footerAndLoader.js') }}"></script>
-    <script src="{{asset('js/particles.js')}}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/other.js') }}"></script>
     <script>
         window.addEventListener('load', function(){
                 particlesJS.load('particles-js', '../particles.json', function() {

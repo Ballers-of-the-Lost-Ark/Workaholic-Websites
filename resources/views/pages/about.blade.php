@@ -1,8 +1,28 @@
 @extends('layouts.app')
 
 @section('head')
-    {{-- about css --}}
-    <link href="{{ asset('css/about.css') }}" rel="stylesheet">
+    <meta name="description" content="Hi, my name is Nick Zinn. Besides website development I love to fly fishing, snowboard, golf, and play basketball. I'm a bit of a perfectionist and that carries into ... ">
+    <meta content="self taught, web developer, full stack developer, handsome developer, nerd" name="keywords">
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="About ">
+    <meta itemprop="description" content="Hi, my name is Nick Zinn. Besides website development I love to fly fishing, snowboard, golf, and play basketball. I'm a bit of a perfectionist and that carries into ... ">
+    <meta itemprop="image" content="https://workaholic-websites.com/images/multiple/me-extra-large.jpg">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://workaholic-websites.com/about">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About ">
+    <meta property="og:description" content="Hi, my name is Nick Zinn. Besides website development I love to fly fishing, snowboard, golf, and play basketball. I'm a bit of a perfectionist and that carries into ... ">
+    <meta property="og:image" content="https://workaholic-websites.com/images/multiple/me-extra-large.jpg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About ">
+    <meta name="twitter:description" content="Hi, my name is Nick Zinn. Besides website development I love to fly fishing, snowboard, golf, and play basketball. I'm a bit of a perfectionist and that carries into ... ">
+    <meta name="twitter:image" content="https://workaholic-websites.com/images/multiple/me-extra-large.jpg">
+
+    <!-- Meta Tags Generated via http://heymeta.com -->
 @endsection
 
 @section('content')
@@ -14,7 +34,7 @@
         <div class="col-12 col-lg-4 w-100">
             {{-- start carousel --}}
             <div class="images h-100">
-                <div id="carouselExampleControls" class="carousel slide pb-4" data-ride="carousel" data-interval="4500">
+                <div id="carouselExampleControls" class="carousel carousel-about slide pb-4" data-ride="carousel" data-interval="4500">
                     <div class="carousel-inner">
                         <div class="carousel-item active colo">
                             <img src="../images/about/colorado-river.jpg" class="img-fluid d-block w-100 photo" alt="Nick holding a fish" data-target="#me" data-toggle="tooltip" data-placement="left" title="One handsome web developer">
@@ -62,9 +82,4 @@
         </div>
     </div>
 
-@endsection
-
-@section('script')
-    <script src="{{asset('js/sliderHeight.js')}}"></script>
-    <script src="{{ asset('js/typeWriter.js') }}"></script>
 @endsection

@@ -4,11 +4,8 @@
     navbar-dark
 @endif">
     <div class="container">
-        {{-- 
-        TODO
-            Add logo
-        <a class="navbar-brand" href="{{ url('/') }}">
-            Workaholic Websites
+        {{-- <a class="navbar-brand" href="{{ url('/') }}">
+            <img src="../images/logo.png" alt="Workaholic Websites logo">
         </a> --}}
         <button class="navbar-toggler navbar-light @isset($index)
             bg-light
@@ -20,11 +17,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link text-white" href="/">Home</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="/services">Services</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="/portfolio">My work</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="/contact">Contact</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="/about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="/portfolio">My work</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
             </ul>
         </div>
     </div>

@@ -20,6 +20,10 @@ footer p{
 .footer-a{
     display: inline-block;
 }
+
+.terms{
+  font-size: 0.9rem !important;
+}
 .loader{
     height: 100vh;
     z-index: 9999;
