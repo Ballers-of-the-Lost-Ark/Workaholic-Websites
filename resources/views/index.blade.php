@@ -58,7 +58,7 @@
     <link rel="shortcut icon" href="{{{ asset('images/logo.ico') }}}">
 
 </head>
-<body class="overflow-x">
+<body class="overflow-x pr-0">
 <div class="loader">
     <div class="spinner-border spinner text-success" style="width: 6rem; height: 6rem;" role="status">
         <span class="sr-only">Loading...</span>
@@ -233,7 +233,7 @@
         <div class="modal fade modal-padding" id="me" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <div class="col-7 offset-4">
+                    <div class="col-8 offset-4">
                         <button type="button" class="close mt-2" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>

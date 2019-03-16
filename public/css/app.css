@@ -11239,3 +11239,7 @@ a.text-wordpress-color:focus {
   background: #333 !important;
 }
 
+.modal-padding {
+  padding-right: 2px !important;
+}
+
