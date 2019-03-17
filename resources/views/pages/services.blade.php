@@ -33,7 +33,7 @@
     <div class="row">
         <div class="col-12 mb-4">
             <blockquote class="blockquote">
-                <p>I specialize in server side (back end) development, specifically Laravel. This combined with front end javascript skills ensures a quality website everytime. If you are a business seeking a web presence or an employer looking to hire, contact me <a href="/contact" class="underline">here</a>.</p>
+                <p>I specialize in server side (back end) development, specifically Laravel. This combined with front end javascript skills ensures a quality website every time. If you are a business seeking a web presence or an employer looking to hire, contact me <a href="/contact" class="underline">here</a>.</p>
             </blockquote>
         </div>
     </div>
