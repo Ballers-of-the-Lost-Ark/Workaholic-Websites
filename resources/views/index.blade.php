@@ -146,7 +146,7 @@
                     <div class="card-body">
                         <h5>Drag and drop</h5>
                         <p>For those on a tight budget, creating/updating a Wordpress, Wix, Go Daddy, Squarespace, etc...</p>
-                        <p><b>Starting as low as $250</b></p>
+                        <p><b>Starting as low as $300</b></p>
                     </div>
                 </div>
             </div>
