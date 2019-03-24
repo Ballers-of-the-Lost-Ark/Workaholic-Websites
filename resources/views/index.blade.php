@@ -275,6 +275,5 @@
             });
         });
     </script>
-    <p>lalalala</p>
 </body>
 </html>
