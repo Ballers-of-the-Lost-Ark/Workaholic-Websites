@@ -275,6 +275,6 @@
                 particlesJS.load('particles-js', '../particles.json', function() {
             });
         });
-    </script>
+    </script>  
 </body>
 </html>
