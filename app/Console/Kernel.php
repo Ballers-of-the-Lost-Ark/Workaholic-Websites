@@ -26,7 +26,7 @@ class Kernel extends ConsoleKernel
     {
         $schedule->exec(
             // backup two directories to project root and run a gitpull command
-            "cd .. && cd .. && eval `ssh-agent -s` && ssh-add ~/.ssh/gitkey && ssh-agent bash -c 'ssh-add ~/.ssh/gitkey; git pull origin master'"
+            "ssh-agent bash -c 'eval `ssh-agent -s`; ssh-add ~/.ssh/gitkey; git pull origin master'"
         )->everyMinute();
     }
 
