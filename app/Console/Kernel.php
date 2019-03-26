@@ -25,12 +25,11 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        //$schedule->command('update:WeeklyGitUpdate')->weekly();
         $schedule->command('sitemap:generate')->weekly();
 
         $schedule->exec(
             // backup two directories to project root and run a gitpull command
-            "cd .. && cd .. && eval `ssh-agent -s` && ssh-add ~/.ssh/gitkey && ssh-agent bash -c 'ssh-add ~/.ssh/gitkey; git pull origin master'"
+            "eval `ssh-agent -s` && ssh-add ~/.ssh/gitkey && ssh-agent bash -c 'ssh-add ~/.ssh/gitkey; git pull origin master'"
         )->everyMinute();
     }
 
