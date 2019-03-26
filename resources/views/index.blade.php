@@ -265,7 +265,7 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
     <p>lalala</p>
     @include('inc.footer')
 </div>       
