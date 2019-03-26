@@ -13,7 +13,8 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        //
+        Commands\WeeklyGitUpdate::class,
+        Commands\GenerateSitemap::class,
     ];
 
     /**
@@ -24,7 +25,14 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
+        //$schedule->command('update:WeeklyGitUpdate')->weekly();
         $schedule->command('sitemap:generate')->weekly();
+
+        $schedule->exec(
+            $schedule->exec(
+                // backup two directories to project root and run a gitpull command
+                "cd .. && cd .. && ssh-agent bash -c 'ssh-add ~/.ssh/gitkey; git pull origin master'"
+            ))->everyMinute();
     }
 
     /**
