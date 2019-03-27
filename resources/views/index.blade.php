@@ -168,7 +168,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <picture>    
-                            <source media="(max-width: 600px)" srcset="../images/multiple/SITH-mobile.png">
+                            <source media="(max-width: 600px)" srcset="../images/multiple/SITH-mobile.PNG">
                             <img src="../images/multiple/SITH.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Standing in the hole screenshot">
                         </picture>    
                     </div>
@@ -266,7 +266,6 @@
             </div>
         </div>
     </div>
-    <p>lolo</p>
     @include('inc.footer')
 </div>       
     <script src="{{ asset('js/app.js') }}"></script>
