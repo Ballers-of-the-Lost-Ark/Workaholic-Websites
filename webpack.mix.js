@@ -24,7 +24,8 @@ mix.js(['resources/js/app.js','resources/js/loader.js', 'resources/js/footerStyl
    mix.combine([
       'resources/css/about.css',
       'resources/css/home.css',
-      'resources/css/services.css'
+      'resources/css/services.css',
+      'resources/css/icons.css'
    ], 'public/css/other.css').options({
       postCss: [require('autoprefixer')]
    });

@@ -32,7 +32,6 @@
   "license": "MIT",
   "dependencies": {
     "fg-loadcss": "^2.1.0",
-    "particles.js": "^2.0.0",
-    "yall-js": "^2.3.2"
+    "particles.js": "^2.0.0"
   }
 }

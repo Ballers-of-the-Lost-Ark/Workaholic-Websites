@@ -150,9 +150,6 @@
 
     {{-- footer and loader css --}}
     <link href="{{ asset('css/footerAndLoader.css') }}" rel="stylesheet" type="text/css">
-    
-    {{-- font awesome --}}
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136072054-1"></script>
@@ -204,7 +201,7 @@
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="card cursor card-service mb-4" data-toggle="modal" data-target="#custom-code">
                     <div class="ml-auto mr-auto mt-3">
-                        <i class="fas fa-code card-img-top extra-large text-success"></i>
+                        <span class="icon-embed card-img-top extra-large text-success"></span>
                     </div>
 
                     <div class="card-body">
@@ -219,7 +216,7 @@
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="card cursor card-service mb-4" data-toggle="modal" data-target="#backend">
                     <div class="ml-auto mr-auto mt-3">
-                        <i class="fas fa-server card-img-top extra-large text-primary"></i>
+                        <span class="icon-servers card-img-top extra-large text-primary"></span>
                     </div>
 
                     <div class="card-body">
@@ -234,7 +231,7 @@
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="card cursor card-service mb-4" data-toggle="modal" data-target="#frontend">
                     <div class="ml-auto mr-auto mt-3">
-                        <i class="fas fa-paint-brush card-img-top extra-large text-logo-red"></i>
+                        <span class="icon-paint-brush card-img-top extra-large text-logo-red"></span>
                     </div>
 
                     <div class="card-body">
@@ -249,7 +246,7 @@
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="card cursor card-service mb-4" data-toggle="modal" data-target="#drag-drop">
                     <div class="ml-auto mr-auto mt-3">
-                        <i class="fab fa-wordpress card-img-top extra-large text-wordpress-color"></i>
+                        <span class="icon-wordpress card-img-top extra-large text-wordpress-color"></span>
                     </div>
 
                     <div class="card-body">
@@ -277,26 +274,26 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <picture>    
-                            <source media="(max-width: 600px)" data-srcset="../images/multiple/SITH-mobile.PNG">
-                            <img src="../images/multiple/placeholder.png" data-srcset="../images/multiple/SITH.PNG" class="lazy d-block ml-auto mr-auto img-fluid" alt="Standing in the hole screenshot">
+                            <source media="(max-width: 600px)" srcset="../images/multiple/SITH-mobile.PNG">
+                            <img src="../images/multiple/SITH.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Standing in the hole screenshot">
                         </picture>    
                     </div>
                     <div class="carousel-item">
                         <picture>
-                            <source media="(max-width: 600px)" data-srcset="../images/multiple/H2H-mobile.png">
-                            <img src="../images/multiple/placeholder.png" data-srcset="../images/multiple/H2H.PNG" class="lazy d-block ml-auto mr-auto img-fluid" alt="Task list screenshot">
+                            <source media="(max-width: 600px)" srcset="../images/multiple/H2H-mobile.png">
+                            <img src="../images/multiple/H2H.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Task list screenshot">
                         </picture>
                     </div>
                     <div class="carousel-item">
                         <picture>
-                            <source media="(max-width: 600px)" data-srcset="../images/multiple/brown-trout-mobile.png">
-                            <img src="../images/multiple/placeholder.png" data-srcset="../images/multiple/brown-trout.PNG" class="lazy d-block ml-auto mr-auto img-fluid" alt="Frat name generator screenshot">
+                            <source media="(max-width: 600px)" srcset="../images/multiple/brown-trout-mobile.png">
+                            <img src="../images/multiple/brown-trout.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Frat name generator screenshot">
                         </picture>
                     </div>
                     <div class="carousel-item">
                         <picture>
-                            <source media="(max-width: 600px)" data-srcset="../images/multiple/frat-name-generator-mobile.png">
-                            <img src="../images/multiple/placeholder.png" data-srcset="../images/multiple/frat-name-generator.PNG" class="lazy d-block ml-auto mr-auto img-fluid" alt="Frat name generator screenshot">
+                            <source media="(max-width: 600px)" srcset="../images/multiple/frat-name-generator-mobile.png">
+                            <img src="../images/multiple/frat-name-generator.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Frat name generator screenshot">
                         </picture>
                     </div>
                 </div>
@@ -325,12 +322,12 @@
 
             <div class="text-center ml-auto mr-auto mb-3">
                 <picture>
-                    <source media="(max-width: 600px)" data-srcset="../images/multiple/me-mobile.jpg">  
-                    <source media="(max-width: 850px)" data-srcset="../images/multiple/me-medium.jpg"> 
-                    <source media="(max-width: 1300px)" data-srcset="../images/multiple/me-large.jpg">
-                    <source media="(max-width: 2500px)" data-srcset="../images/multiple/me-extra-large.jpg">  
+                    <source media="(max-width: 600px)" srcset="../images/multiple/me-mobile.jpg">  
+                    <source media="(max-width: 850px)" srcset="../images/multiple/me-medium.jpg"> 
+                    <source media="(max-width: 1300px)" srcset="../images/multiple/me-large.jpg">
+                    <source media="(max-width: 2500px)" srcset="../images/multiple/me-extra-large.jpg">  
 
-                    <img src="../images/multiple/placeholder.png" data-srcset="../images/multiple/me.jpg" alt="One handsome web developer" class="lazy img-fluid photo cursor" data-toggle="modal" data-target="#me" data-toggle="tooltip" data-placement="left" title="One handsome web developer"> 
+                    <img src="../images/multiple/me.jpg" alt="One handsome web developer" class="img-fluid photo cursor" data-toggle="modal" data-target="#me" data-toggle="tooltip" data-placement="left" title="One handsome web developer"> 
                 </picture> 
             </div>
 
@@ -360,12 +357,12 @@
                 </div>    
                 <div class="modal-body">
                     <picture class="ml-auto mr-auto">
-                        <source media="(max-width: 600px)" data-srcset="../images/multiple/me-mobile.jpg">  
-                        <source media="(max-width: 850px)" data-srcset="../images/multiple/me-medium.jpg"> 
-                        <source media="(max-width: 1300px)" data-srcset="../images/multiple/me-large.jpg">
-                        <source media="(max-width: 2500px)" data-srcset="../images/multiple/me-extra-large.jpg">  
+                        <source media="(max-width: 600px)" srcset="../images/multiple/me-mobile.jpg">  
+                        <source media="(max-width: 850px)" srcset="../images/multiple/me-medium.jpg"> 
+                        <source media="(max-width: 1300px)" srcset="../images/multiple/me-large.jpg">
+                        <source media="(max-width: 2500px)" srcset="../images/multiple/me-extra-large.jpg">  
 
-                        <img src="../images/multiple/placeholder.png" data-srcset="../images/multiple/me.jpg" alt="One sexy web developer" class="lazy img-fluid"  data-toggle="tooltip" data-placement="left" title="One handsome web developer"> 
+                        <img src="../images/multiple/me.jpg" alt="One sexy web developer" class="img-fluid"  data-toggle="tooltip" data-placement="left" title="One handsome web developer"> 
                     </picture>   
                 </div>
                 <div class="modal-footer">
@@ -377,16 +374,12 @@
     </div>
     @include('inc.footer')
 </div>     
-    {{-- lazy image reloader --}}
-    <script>
-        document.addEventListener("DOMContentLoaded", yall);
-    </script>
     <script src="{{ asset('js/app.js') }}" async></script>
     <script>
         window.addEventListener('load', function(){
                 particlesJS.load('particles-js', '../particles.json', function() {
             });
         });
-    </script>  
+    </script>
 </body>
 </html>

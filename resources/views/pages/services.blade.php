@@ -46,7 +46,7 @@
         <div class="col-12 col-md-6 col-xl-4">
             <div class="card mb-4" data-toggle="modal" data-target="#custom-code">
                 <div class="ml-auto mr-auto mt-3">
-                    <i class="fas fa-code card-img-top extra-large text-success"></i>
+                    <span class="icon-embed card-img-top extra-large text-success"></span>
                 </div>
 
                 <div class="card-body">
@@ -61,7 +61,7 @@
         <div class="col-12 col-md-6 col-xl-4">
             <div class="card mb-4" data-toggle="modal" data-target="#backend">
                 <div class="ml-auto mr-auto mt-3">
-                    <i class="fas fa-server card-img-top extra-large text-primary"></i>
+                    <span class="icon-servers card-img-top extra-large text-primary"></span>
                 </div>
 
                 <div class="card-body">
@@ -76,7 +76,7 @@
         <div class="col-12 col-md-6 col-xl-4">
             <div class="card mb-4" data-toggle="modal" data-target="#frontend">
                 <div class="ml-auto mr-auto mt-3">
-                    <i class="fas fa-paint-brush card-img-top extra-large text-logo-red"></i>
+                    <span class="icon-paint-brush card-img-top extra-large text-logo-red"></span>
                 </div>
 
                 <div class="card-body">
@@ -91,7 +91,7 @@
         <div class="col-12 col-md-6 col-xl-4">
             <div class="card mb-4" data-toggle="modal" data-target="#drag-drop">
                 <div class="ml-auto mr-auto mt-3">
-                    <i class="fab fa-wordpress card-img-top extra-large text-wordpress-color"></i>
+                    <span class="icon-wordpress card-img-top extra-large text-wordpress-color"></span>
                 </div>
 
                 <div class="card-body">
@@ -106,7 +106,7 @@
         <div class="col-12 col-md-6 col-xl-4">
             <div class="card mb-4" data-toggle="modal" data-target="#drag-drop">
                 <div class="ml-auto mr-auto mt-3">
-                    <i class="fas fa-pencil-alt card-img-top extra-large"></i>
+                    <span class="icon-pencil card-img-top extra-large"></span>
                 </div>
 
                 <div class="card-body">
@@ -121,7 +121,7 @@
         <div class="col-12 col-md-6 col-xl-4">
             <div class="card mb-4" data-toggle="modal" data-target="#drag-drop">
                 <div class="ml-auto mr-auto mt-3">
-                    <i class="far fa-smile card-img-top extra-large text-warning"></i>
+                    <span class="icon-smile-o card-img-top extra-large text-warning"></span>
                 </div>
 
                 <div class="card-body">
