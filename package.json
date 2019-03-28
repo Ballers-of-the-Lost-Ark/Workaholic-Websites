@@ -13,7 +13,7 @@
     "axios": "^0.18",
     "bootstrap": "^4.3.1",
     "jquery": "^3.2",
-    "laravel-mix": "^4.0.7",
+    "laravel-mix": "^4.0.15",
     "lodash": "^4.17.5",
     "popper.js": "^1.14.7",
     "resolve-url-loader": "^2.3.2",
@@ -31,6 +31,8 @@
   "author": "nick zinn",
   "license": "MIT",
   "dependencies": {
-    "particles.js": "^2.0.0"
+    "fg-loadcss": "^2.1.0",
+    "particles.js": "^2.0.0",
+    "yall-js": "^2.3.2"
   }
 }
