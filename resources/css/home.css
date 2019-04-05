@@ -21,7 +21,7 @@
 }
 
 .particles{
-    height: 35vh;
+    height: 30vh;
 }
 
 .modal-padding{
@@ -40,7 +40,7 @@
 
 @media(min-width: 576px){
     .particles{
-        height: 45vh;
+        height: 37vh;
     }
 
     .carousel-index{

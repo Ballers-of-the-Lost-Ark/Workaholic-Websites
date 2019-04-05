@@ -209,7 +209,7 @@
 
     <div class="row mt-3">
         <div class="ml-auto mr-auto mb-1">
-            <i class="fas fa-tools large"></i>
+            <span class="icon-tools1 large"></span>
         </div>
 
         <div class="col-12 mt-2">

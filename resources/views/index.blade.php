@@ -292,8 +292,8 @@
                     </div>
                     <div class="carousel-item">
                         <picture>
-                            <source media="(max-width: 600px)" srcset="../images/multiple/frat-name-generator-mobile.png">
-                            <img src="../images/multiple/frat-name-generator.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Frat name generator screenshot">
+                            <source media="(max-width: 600px)" srcset="../images/multiple/YVCC-mobile.PNG">
+                            <img src="../images/multiple/YVCC.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Yampa Valley Chiropractic Center screenshot">
                         </picture>
                     </div>
                 </div>

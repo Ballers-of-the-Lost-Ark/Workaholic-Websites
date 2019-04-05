@@ -41,11 +41,27 @@
 
                 <div class="card-body">
                     <h5>Standing in the hole</h5>
-                    <p>My personal fly fishing blog. Contains a multi level admin system, CRUD (Create, Read, Update, Delete) functionality, search capability, and a login/register structure. (For the technical; custom admin middleware, image compression, Laravel and Bootstrap.)</p>  
+                    <p>My personal fly fishing blog. Contains a multi-tier admin system, CRUD (Create, Read, Update, Delete) functionality, encrypted offsite backups every 60 days, search capability, and a login/register structure. (For the technical; custom admin middleware, image compression, Laravel and Bootstrap.)</p>  
                     
                     <a href="http://www.standing-in-the-hole.com/" target="_blank" class="btn btn-outline-primary">View site</a>
 
                     <a href="https://github.com/Ballers-of-the-Lost-Ark/SITHLA" target="_blank" class="btn btn-outline-success ml-3">View code</a> 
+                </div>
+            </div>
+        </div>
+
+        {{-- start YVCC --}}
+        <div class="col-12 col-md-6">
+            <div class="card portfolio-card mb-3" data-toggle="modal" data-target="#custom">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="../images/multiple/YVCC-mobile.PNG">
+                    <img src="../images/multiple/YVCC.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Frat name generator screenshot">
+                </picture>
+
+                <div class="card-body">
+                    <h5>Yampa Valley Chiropractic Center</h5>
+                    <p>17 page chiropractic site. Modern design, clean social media bar, informative content using videos, and image compression and resizement.(For the technical; Bootstrap, custom three tier navigation bar, and compiled using Gulp.)</p>
+                    <a href="https://www.yampavalleychiro.com/" target="_blank" class="btn btn-outline-primary">View site</a>
                 </div>
             </div>
         </div>
@@ -60,7 +76,7 @@
 
                 <div class="card-body">
                     <h5>Here2Help Plumbing</h5>
-                    <p>A custom local plumbing website I designed and coded. (For the technical; pure css no libraries, custom animation and JavaScript.)</p>
+                    <p>A custom local plumbing website. Custom theme and animation. (For the technical; pure css no libraries, custom animation and JavaScript.)</p>
                     <a href="https://www.here2helpplumbing.com/" target="_blank" class="btn btn-outline-primary">View site</a>
                 </div>
 
