@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
 
 <head>
     <meta name="description"
@@ -10,7 +10,7 @@
     <meta itemprop="name" content="Workaholic Websites | Superb Web Development">
     <meta itemprop="description"
         content="Full stack web development. A one stop shop for all your website needs. Grow your business with an elegant website. Come see why Quality is Everything at Workaholic Websites®.">
-    <meta itemprop="image" content="https://workaholic-websites.com/images/index/code-large.jpeg">
+    <meta itemprop="image" content="https://workaholic-websites.com/assets/images/index/code-large.jpeg">
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://workaholic-websites.com">
@@ -18,14 +18,14 @@
     <meta property="og:title" content="Workaholic Websites | Superb Web Development">
     <meta property="og:description"
         content="Full stack web development. A one stop shop for all your website needs. Grow your business with an elegant website. Come see why Quality is Everything at Workaholic Websites®.">
-    <meta property="og:image" content="https://workaholic-websites.com/images/index/code-large.jpeg">
+    <meta property="og:image" content="https://workaholic-websites.com/assets/images/index/code-large.jpeg">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Workaholic Websites | Superb Web Development">
     <meta name="twitter:description"
         content="Full stack web development. A one stop shop for all your website needs. Grow your business with an elegant website. Come see why Quality is Everything at Workaholic Websites®.">
-    <meta name="twitter:image" content="https://workaholic-websites.com/images/index/code-large.jpeg">
+    <meta name="twitter:image" content="https://workaholic-websites.com/assets/images/index/code-large.jpeg">
 
     <!-- Meta Tags Generated via http://heymeta.com -->
 
@@ -33,16 +33,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
     <title>Workaholic Websites | Superb Web Development</title>
 
+    <!-- scripts -->
+    <script src="../js/particles.js" defer></script>
+    <script src="../js/app.js" defer></script>
+
     <!-- Styles -->
-    {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
-    <link rel="preload" href="{{ asset('css/app.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <!-- <link href="../css/app.css" rel="stylesheet"> -->
+    <link rel="preload" href="../css/app.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}"></noscript>
+        <link rel="stylesheet" href="../css/app.css"></noscript>
     <script>
         (function (w) {
             "use strict";
@@ -151,12 +152,6 @@
         }(typeof global !== "undefined" ? global : this));
     </script>
 
-    {{-- other css --}}
-    <link href="{{ asset('css/other.css') }}" rel="stylesheet">
-
-    {{-- footer and loader css --}}
-    <link href="{{ asset('css/footerAndLoader.css') }}" rel="stylesheet" type="text/css">
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136072054-1"></script>
     <script>
@@ -167,7 +162,8 @@
         gtag('config', 'UA-136072054-1');
     </script>
 
-    <link rel="shortcut icon" href="{{{ asset('images/logo.ico') }}}">
+    <link rel="shortcut icon" href="../assets/images/logo.ico">
+
 
 </head>
 
@@ -180,8 +176,8 @@
 
     <div class="la">
         <div class="home">
-            @include('inc.navbar')
-            @include('inc.messages')
+            <!-- @include('inc.navbar') -->
+            <!-- @include('inc.messages') -->
 
             <div class="particles" id="particles-js">
 
@@ -196,7 +192,7 @@
 
         <div class="triangle-down mb-4"></div>
 
-        {{-- start services --}}
+        <!-- start services -->
         <div class="container">
             <div class="text-center">
                 <h3 class="underline cursor"><a href="/services">Services</a></h3>
@@ -204,7 +200,7 @@
             </div>
 
             <div class="row mb-5">
-                {{-- Start custom code --}}
+                <!-- Start custom code -->
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="card cursor card-service mb-4" data-toggle="modal" data-target="#custom-code">
                         <div class="ml-auto mr-auto mt-3">
@@ -219,7 +215,7 @@
                     </div>
                 </div>
 
-                {{-- Start back end development --}}
+                <!-- Start back end development -->
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="card cursor card-service mb-4" data-toggle="modal" data-target="#backend">
                         <div class="ml-auto mr-auto mt-3">
@@ -234,7 +230,7 @@
                     </div>
                 </div>
 
-                {{-- Start front end development --}}
+                <!-- Start front end development -->
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="card cursor card-service mb-4" data-toggle="modal" data-target="#frontend">
                         <div class="ml-auto mr-auto mt-3">
@@ -249,7 +245,7 @@
                     </div>
                 </div>
 
-                {{-- start drag and drop --}}
+                <!-- start drag and drop -->
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="card cursor card-service mb-4" data-toggle="modal" data-target="#drag-drop">
                         <div class="ml-auto mr-auto mt-3">
@@ -271,12 +267,12 @@
             </div>
 
 
-            {{-- Start portfolio --}}
+            <!-- Start portfolio -->
             <div class="text-center mb-4">
                 <h3 class="underline"><a href="/portfolio">My work</a></h3>
             </div>
 
-            {{-- start carousel --}}
+            <!-- start carousel -->
             <div class="carousel mb-4">
                 <div id="slider" class="carousel carousel-index slide carousel-fade" data-ride="carousel"
                     data-interval="3500">
@@ -329,7 +325,7 @@
             </div>
 
 
-            {{-- Start about--}}
+            <!-- Start abou -->
             <div class="text-center mt-5 mb-3">
                 <h3 class="underline"><a href="/about">About me</a></h3>
             </div>
@@ -396,15 +392,15 @@
                 </div>
             </div>
         </div>
-        @include('inc.footer')
+        <div data-include="layouts/footer"></div>
+
     </div>
-    <script src="{{ asset('js/app.js') }}" async></script>
-    <script>
+    <!-- <script>
         window.addEventListener('load', function () {
             particlesJS.load('particles-js', '../particles.json', function () {
             });
         });
-    </script>
+    </script> -->
 </body>
 
 </html>

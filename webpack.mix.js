@@ -21,17 +21,17 @@ mix.js([
    'resources/js/include-html.js',
    'resources/js/run-particles.js',
 
-], 'public/js/app.js');
+], 'dist/js/app.js');
 
-mix.sass('resources/sass/app.scss', 'public/css');
+mix.sass('resources/sass/app.scss', 'dist/css');
 
-mix.copyDirectory('resources/assets/', 'public/assets');
+mix.copyDirectory('resources/assets/', 'dist/assets');
 
-mix.copy('node_modules/particles.js/particles.js', 'public/js/particles.js');
+mix.copy('node_modules/particles.js/particles.js', 'dist/js/particles.js');
 
 // mix.styles([
 //    'resources/css/footer.css', 'resources/css/loader.css'
-// ], 'public/css/footerAndLoader.css').options({
+// ], 'dist/css/footerAndLoader.css').options({
 //    postCss: [require('autoprefixer')]
 // });
 
@@ -40,6 +40,6 @@ mix.copy('node_modules/particles.js/particles.js', 'public/js/particles.js');
 //    'resources/css/home.css',
 //    'resources/css/services.css',
 //    'resources/css/icons.css'
-// ], 'public/css/other.css').options({
+// ], 'dist/css/other.css').options({
 //    postCss: [require('autoprefixer')]
 // });
