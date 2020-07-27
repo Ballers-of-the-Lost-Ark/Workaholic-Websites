@@ -11,21 +11,35 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js(['resources/js/app.js','resources/js/loader.js', 'resources/js/footerStyle.js', 'resources/js/particles.js', 'resources/js/service-redirect.js', 'resources/js/sliderHeight.js', 'resources/js/typeWriter.js'], 'public/js/app.js');
+mix.js([
+   'resources/js/app.js',
+   'resources/js/loader.js',
+   'resources/js/format-footer.js',
+   'resources/js/service-redirect.js',
+   'resources/js/slider-height.js',
+   'resources/js/typewriter.js',
+   'resources/js/include-html.js',
+   'resources/js/run-particles.js',
 
-   mix.sass('resources/sass/app.scss', 'public/css');
-   
-   mix.styles([
-      'resources/css/footer.css', 'resources/css/loader.css'
-   ], 'public/css/footerAndLoader.css').options({
-      postCss: [require('autoprefixer')]
-   });
+], 'public/js/app.js');
 
-   mix.combine([
-      'resources/css/about.css',
-      'resources/css/home.css',
-      'resources/css/services.css',
-      'resources/css/icons.css'
-   ], 'public/css/other.css').options({
-      postCss: [require('autoprefixer')]
-   });
+mix.sass('resources/sass/app.scss', 'public/css');
+
+mix.copyDirectory('resources/assets/', 'public/assets');
+
+mix.copy('node_modules/particles.js/particles.js', 'public/js/particles.js');
+
+// mix.styles([
+//    'resources/css/footer.css', 'resources/css/loader.css'
+// ], 'public/css/footerAndLoader.css').options({
+//    postCss: [require('autoprefixer')]
+// });
+
+// mix.combine([
+//    'resources/css/about.css',
+//    'resources/css/home.css',
+//    'resources/css/services.css',
+//    'resources/css/icons.css'
+// ], 'public/css/other.css').options({
+//    postCss: [require('autoprefixer')]
+// });

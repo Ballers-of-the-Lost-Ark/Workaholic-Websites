@@ -7,20 +7,20 @@
     <!-- Google / Search Engine Tags -->
     <meta itemprop="name" content="My Work">
     <meta itemprop="description" content="Beautiful examples of what Workaholic Websites™ can do for you. Work includes front end, back end, and full stack web development. Contact us to learn more.">
-    <meta itemprop="image" content="https://workaholic-websites.com/images/multiple/H2H.PNG">
+    <meta itemprop="image" content="https://workaholic-websites.com/assets/images/multiple/H2H.PNG">
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://workaholic-websites.com/portfolio">
     <meta property="og:type" content="website">
     <meta property="og:title" content="My Work">
     <meta property="og:description" content="Beautiful examples of what Workaholic Websites™ can do for you. Work includes front end, back end, and full stack web development. Contact us to learn more.">
-    <meta property="og:image" content="https://workaholic-websites.com/images/multiple/H2H.PNG">
+    <meta property="og:image" content="https://workaholic-websites.com/assets/images/multiple/H2H.PNG">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="My Work">
     <meta name="twitter:description" content="Beautiful examples of what Workaholic Websites™ can do for you. Work includes front end, back end, and full stack web development. Contact us to learn more.">
-    <meta name="twitter:image" content="https://workaholic-websites.com/images/multiple/H2H.PNG">
+    <meta name="twitter:image" content="https://workaholic-websites.com/assets/images/multiple/H2H.PNG">
 
     <!-- Meta Tags Generated via http://heymeta.com -->
 @endsection
@@ -35,8 +35,8 @@
         <div class="col-12 col-md-6">
             <div class="card portfolio-card mb-4" data-toggle="modal" data-target="#sith">
                 <picture>    
-                    <source media="(max-width: 600px)" srcset="../images/multiple/SITH-mobile.PNG">
-                    <img src="../images/multiple/SITH.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Standing in the hole screenshot">
+                    <source media="(max-width: 600px)" srcset="../assets/images/multiple/SITH-mobile.PNG">
+                    <img src="../assets/images/multiple/SITH.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Standing in the hole screenshot">
                 </picture>
 
                 <div class="card-body">
@@ -54,8 +54,8 @@
         <div class="col-12 col-md-6">
             <div class="card portfolio-card mb-3" data-toggle="modal" data-target="#custom">
                 <picture>
-                    <source media="(max-width: 600px)" srcset="../images/multiple/YVCC-mobile.PNG">
-                    <img src="../images/multiple/YVCC.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Frat name generator screenshot">
+                    <source media="(max-width: 600px)" srcset="../assets/images/multiple/YVCC-mobile.PNG">
+                    <img src="../assets/images/multiple/YVCC.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Frat name generator screenshot">
                 </picture>
 
                 <div class="card-body">
@@ -70,8 +70,8 @@
         <div class="col-12 col-md-6">
             <div class="card portfolio-card mb-3">
                 <picture>
-                    <source media="(max-width: 600px)" srcset="../images/multiple/H2H-mobile.png">
-                    <img src="../images/multiple/H2H.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Task list screenshot">
+                    <source media="(max-width: 600px)" srcset="../assets/images/multiple/H2H-mobile.png">
+                    <img src="../assets/images/multiple/H2H.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Task list screenshot">
                 </picture>
 
                 <div class="card-body">
@@ -87,8 +87,8 @@
         <div class="col-12 col-md-6">
             <div class="card portfolio-card mb-3">
                 <picture>
-                    <source media="(max-width: 600px)" srcset="../images/multiple/brown-trout-mobile.png">
-                    <img src="../images/multiple/brown-trout.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Frat name generator screenshot">
+                    <source media="(max-width: 600px)" srcset="../assets/images/multiple/brown-trout-mobile.png">
+                    <img src="../assets/images/multiple/brown-trout.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Frat name generator screenshot">
                 </picture>
 
                 <div class="card-body">
@@ -107,8 +107,8 @@
         <div class="col-12 col-md-6">
             <div class="card portfolio-card mb-3" data-toggle="modal" data-target="#custom">
                 <picture>
-                    <source media="(max-width: 600px)" srcset="../images/multiple/frat-name-generator-mobile.png">
-                    <img src="../images/multiple/frat-name-generator.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Frat name generator screenshot">
+                    <source media="(max-width: 600px)" srcset="../assets/images/multiple/frat-name-generator-mobile.png">
+                    <img src="../assets/images/multiple/frat-name-generator.PNG" class="d-block ml-auto mr-auto img-fluid" alt="Frat name generator screenshot">
                 </picture>
 
                 <div class="card-body">

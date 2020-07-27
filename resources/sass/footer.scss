@@ -1,0 +1,26 @@
+footer{
+    width: 100%;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: relative;
+}
+
+footer p{
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: block;
+}
+
+.footer-a{
+    display: inline-block;
+}
+
+.terms{
+  font-size: 0.9rem !important;
+}

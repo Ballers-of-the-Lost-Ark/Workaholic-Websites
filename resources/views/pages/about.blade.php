@@ -7,20 +7,20 @@
     <!-- Google / Search Engine Tags -->
     <meta itemprop="name" content="About ">
     <meta itemprop="description" content="Hi, my name is Nick Zinn. Besides website development I love to fly fishing, snowboard, golf, and play basketball. I'm a bit of a perfectionist and that carries into ... ">
-    <meta itemprop="image" content="https://workaholic-websites.com/images/multiple/me-extra-large.jpg">
+    <meta itemprop="image" content="https://workaholic-websites.com/assets/images/multiple/me-extra-large.jpg">
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://workaholic-websites.com/about">
     <meta property="og:type" content="website">
     <meta property="og:title" content="About ">
     <meta property="og:description" content="Hi, my name is Nick Zinn. Besides website development I love to fly fishing, snowboard, golf, and play basketball. I'm a bit of a perfectionist and that carries into ... ">
-    <meta property="og:image" content="https://workaholic-websites.com/images/multiple/me-extra-large.jpg">
+    <meta property="og:image" content="https://workaholic-websites.com/assets/images/multiple/me-extra-large.jpg">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="About ">
     <meta name="twitter:description" content="Hi, my name is Nick Zinn. Besides website development I love to fly fishing, snowboard, golf, and play basketball. I'm a bit of a perfectionist and that carries into ... ">
-    <meta name="twitter:image" content="https://workaholic-websites.com/images/multiple/me-extra-large.jpg">
+    <meta name="twitter:image" content="https://workaholic-websites.com/assets/images/multiple/me-extra-large.jpg">
 
     <!-- Meta Tags Generated via http://heymeta.com -->
 @endsection
@@ -37,26 +37,26 @@
                 <div id="carouselExampleControls" class="carousel carousel-about slide pb-4" data-ride="carousel" data-interval="4500">
                     <div class="carousel-inner">
                         <div class="carousel-item active colo">
-                            <img src="../images/about/colorado-river.jpg" class="img-fluid d-block w-100 photo" alt="Nick holding a fish" data-target="#me" data-toggle="tooltip" data-placement="left" title="One handsome web developer">
+                            <img src="../assets/images/about/colorado-river.jpg" class="img-fluid d-block w-100 photo" alt="Nick holding a fish" data-target="#me" data-toggle="tooltip" data-placement="left" title="One handsome web developer">
                         </div>
                         <div class="carousel-item">
                             <picture>
-                                <source media="(max-width: 600px)" srcset="../images/multiple/me-mobile.jpg">  
-                                <source media="(max-width: 850px)" srcset="../images/multiple/me-medium.jpg"> 
-                                <source media="(max-width: 1300px)" srcset="../images/multiple/me-large.jpg">
-                                <source media="(max-width: 2500px)" srcset="../images/multiple/me-extra-large.jpg">  
+                                <source media="(max-width: 600px)" srcset="../assets/images/multiple/me-mobile.jpg">  
+                                <source media="(max-width: 850px)" srcset="../assets/images/multiple/me-medium.jpg"> 
+                                <source media="(max-width: 1300px)" srcset="../assets/images/multiple/me-large.jpg">
+                                <source media="(max-width: 2500px)" srcset="../assets/images/multiple/me-extra-large.jpg">  
 
-                                <img src="../images/multiple/me.jpg" alt="One handsome web developer" class="img-fluid d-block w-100 photo" data-toggle="modal" data-target="#me" data-toggle="tooltip" data-placement="left" title="One handsome web developer"> 
+                                <img src="../assets/images/multiple/me.jpg" alt="One handsome web developer" class="img-fluid d-block w-100 photo" data-toggle="modal" data-target="#me" data-toggle="tooltip" data-placement="left" title="One handsome web developer"> 
                             </picture> 
                         </div>
                         <div class="carousel-item">
                             <picture>
-                                <source media="(max-width: 600px)" srcset="../images/about/cheeseman-mobile.jpg">  
-                                <source media="(max-width: 850px)" srcset="../images/about/cheeseman-medium.jpg"> 
-                                <source media="(max-width: 1300px)" srcset="../images/about/cheeseman-large.jpg">
-                                <source media="(max-width: 2500px)" srcset="../images/about/cheeseman-extra-large.jpg">  
+                                <source media="(max-width: 600px)" srcset="../assets/images/about/cheeseman-mobile.jpg">  
+                                <source media="(max-width: 850px)" srcset="../assets/images/about/cheeseman-medium.jpg"> 
+                                <source media="(max-width: 1300px)" srcset="../assets/images/about/cheeseman-large.jpg">
+                                <source media="(max-width: 2500px)" srcset="../assets/images/about/cheeseman-extra-large.jpg">  
 
-                                <img src="../images/about/cheeseman.jpg" class=" img-fluidd-block w-100 photo" alt="Nick holding another fish" data-target="#me" data-toggle="tooltip" data-placement="left" title="One handsome web developer">
+                                <img src="../assets/images/about/cheeseman.jpg" class=" img-fluidd-block w-100 photo" alt="Nick holding another fish" data-target="#me" data-toggle="tooltip" data-placement="left" title="One handsome web developer">
                             </picture>
                         </div>
                     </div>

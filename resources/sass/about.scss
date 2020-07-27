@@ -1,0 +1,58 @@
+.text{
+    margin-top: -2rem;
+}
+
+.text-large{
+    font-size: 3.2rem;
+}
+
+.fade-out1{
+    color: #3b424a;
+}
+
+.fade-out2{
+    color: #55606a;
+}
+
+.fade-out3{
+    color: #707d8b;
+}
+
+.photo{
+    border-radius: 50%;
+    border: 1.5px solid #212529;
+}
+
+.carousel-about{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+@media(min-width: 576px){
+    .carousel-about{
+        width: 70%;
+    }
+}
+
+@media(min-width: 768px){
+    .carousel-about{
+        width: 55%;
+    }
+}
+
+@media(min-width: 992px){
+    .carousel-about{
+        width: 23rem;
+    }
+}
+
+/* 
+keep for reference on how to change toggle icons
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff1919' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2326a2da' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+} */
